@@ -17,3 +17,7 @@ end
 get '/cat' do
   erb(:index)
 end
+
+get '/erbtest' do 
+  erb "Hi there vistor <%= 2 + 2 %>"
+end
