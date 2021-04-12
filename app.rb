@@ -25,6 +25,7 @@ get '/named-cat' do
   erb(:index)
 end
 
-get '/erbtest' do 
-  erb "Hi there vistor <%= 2 + 2 %>"
+post "/named-cat" do
+  @name = params[:name]
+  erb(:index)
 end
