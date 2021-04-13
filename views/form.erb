@@ -1,0 +1,14 @@
+  <html>
+    <body>
+    <div style='text-align: center'>
+        <% if !@name %>
+        <form action="/named-cat" method="post">
+          <label for="name">Name:</label>
+          <input type="text" name="name">
+          <input type="submit" value="Submit">
+        </form>
+        <% end %>
+      </div>
+    </div>
+    </body>
+  </html>
